@@ -23,9 +23,9 @@ An example for one dataframe is given here in `data_example.csv`. The dataframes
 - Your measurement column such as `F2`, `ULx` etc.
 - *Speaker*: Which speaker the current time series belong to.
 
-Because GAMM requires for all the time series to contain the same number of samples, each time series should be time normalised or trimmed to have the same number of rows.
+Because GAMM requires for all the time series to contain the same number of samples, each time series should be time normalised or trimmed to have the same number of rows. The example data here contains 96 time points per word sequence.
 ## Usage
-4 arguments are needed to run the script:
+4 arguments are needed to run the function:
 - *df_list*: The list of dataframes mentioned above.
 - *k_*: The k parameter used in the GAMMs. You can determine this by manually modelling for one triplet and checking with the `gam.check()` function in the `mgcv` package.
 - *min_sig_length*: How long the divergence need to be significant for the onset to be recorded. 40 ms was used in [Liu et al (2022)](https://www.sciencedirect.com/science/article/abs/pii/S0095447021000917).
