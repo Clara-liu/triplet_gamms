@@ -90,7 +90,7 @@ str(s1_dfs[[1]])
 ```
 ```R
 # run the analysis
-s1_f2_diverge<- getDivergeData(s1_dfs, k, stimuli_list, measurement, sig_interval)
+s1_f2_diverge<- getDivergeData(s1_dfs, k, stimuli_list, sig_interval, measurement)
 # overview of the result
 str(s1_f2_diverge)
 ```
